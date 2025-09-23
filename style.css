@@ -1,8 +1,9 @@
 :root {
   --main-bg: #FFF;
   --second-bg: #D2D5DA;
-  --thrid-bg: #E5E7EB;
-  --background-button: ;
+  --third-bg: #E5E7EB;
+  --background-button: #1D1D1F;
+  --second-background-button: #394150;
 }
 
 * {
@@ -31,10 +32,11 @@ h1 {
   font-weight: 700;
 
   & span {
-    background-color: #000;
+    background-color: var(--background-button);
     border-radius: 10px;
     padding: 5px 10px;
     font-size: 1rem;
+    font-weight: 100;
   }
 }
 
@@ -44,6 +46,8 @@ main {
   margin: 20px;
   display: flex;
 }
+
+/* HISTORY */
 
 .content-history {
   background-color: var(--second-bg);
@@ -98,3 +102,20 @@ main {
     justify-content: space-between;
   }
 }
+
+.article-summary_coupon {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+
+  & input {
+    border: var(--third-bg);
+    flex: 1;
+  }
+
+  & button {
+    display: inline-block;
+  }
+}
+
+/* CONTACT */
