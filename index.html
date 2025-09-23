@@ -6,14 +6,126 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <link rel="icon" href="resources/favicon.ico" type="image/x-icon" sizes="96x96" />
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
 
   <title>Device Shop Checkout | devChallenges.io</title>
 </head>
 
 <body>
   <h1>Checkout
-    <div>3 items</div>
+    <span>3 ITEMS</span>
   </h1>
+  <main>
+    <div class="content-history">
+      <article class="article-history">
+        <img src="./resources/Gold.png" alt="Iphone 12 Pro Golden">
+        <div class="article-history_info">
+          <section class="article-history_info-text">
+            <div>
+              <h3>iPhone 12 Pro</h3>
+              <p>Golden</p>
+            </div>
+            <p>$999.00</p>
+          </section>
+          <section class="article-history_info-quantity">
+            <p>x1</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+              <path fill="currentColor"
+                d="m8.401 16.333l-.734-.727L11.266 12L7.667 8.42l.734-.728L12 11.29l3.574-3.597l.734.727L12.709 12l3.599 3.606l-.734.727L12 12.737z" />
+            </svg>
+          </section>
+        </div>
+      </article>
+      <article class="article-history">
+        <img src="./resources/Apple-watch.png" alt="Iphone 12 Pro Golden">
+        <div class="article-history_info">
+          <section class="article-history_info-text">
+            <div>
+              <h3>Apple Watch</h3>
+              <p>Blue</p>
+            </div>
+            <p>$399.00</p>
+          </section>
+          <section class="article-history_info-quantity">
+            <p>x1</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+              <path fill="currentColor"
+                d="m8.401 16.333l-.734-.727L11.266 12L7.667 8.42l.734-.728L12 11.29l3.574-3.597l.734.727L12.709 12l3.599 3.606l-.734.727L12 12.737z" />
+            </svg>
+          </section>
+        </div>
+      </article>
+      <article class="article-history">
+        <img src="./resources/iMac.png" alt="Iphone 12 Pro Golden">
+        <div class="article-history_info">
+          <section class="article-history_info-text">
+            <div>
+              <h3>iMac</h3>
+              <p>Green</p>
+            </div>
+            <p>$1199.00</p>
+          </section>
+          <section class="article-history_info-quantity">
+            <p>x1</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+              <path fill="currentColor"
+                d="m8.401 16.333l-.734-.727L11.266 12L7.667 8.42l.734-.728L12 11.29l3.574-3.597l.734.727L12.709 12l3.599 3.606l-.734.727L12 12.737z" />
+            </svg>
+          </section>
+        </div>
+      </article>
+      <hr>
+      <section class="article-summary">
+        <div>
+          <input type="text" name="coupon" placeholder="Enter coupon code">
+          <button>Apply Coupon</button>
+        </div>
+        <span>
+          <h2>Sub total</h2>
+          <p>$2597.00</p>
+        </span>
+        <span>
+          <h2>Tax</h2>
+          <p>$623.28</p>
+        </span>
+        <span>
+          <h2>Total</h2>
+          <p>$3220.28</p>
+        </span>
+      </section>
+    </div>
+    <div class="content-contact">
+      <h2>Contact Information</h2>
+      <form action="">
+        <label for="name">First & Last name</label>
+        <input type="text" id="name" name="name" placeholder="Enter first & last name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Enter email address" required>
+
+        <label for="country">Country</label>
+        <select id="country" name="country" required>
+          <option value="" disabled selected>Select your country</option>
+          <option value="finland">Finland</option>
+          <option value="sweden">Sweden</option>
+          <option value="norway">Norway</option>
+          <option value="denmark">Denmark</option>
+          <option value="iceland">Iceland</option>
+        </select>
+
+        <label for="postalcode">Postal Code</label>
+        <input type="text" id="postalcode" name="postalcode" placeholder="00270" required>
+
+        <button type="submit">Continue</button>
+      </form>
+    </div>
+  </main>
   <!--     
     Checkout
     

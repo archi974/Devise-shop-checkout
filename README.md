@@ -30,7 +30,7 @@ For more information about the challenge, access the challenge editor on [devCha
 
 ## Steps to Complete the Challenge on devChallenges.io
 
-- [ ] Start by visiting [devChallenges.io](https://devchallenges.io/), navigate to the challenge page, and begin the challenge.
+- [x] Start by visiting [devChallenges.io](https://devchallenges.io/), navigate to the challenge page, and begin the challenge.
 - [ ] Once you have started the challenge, you will have access to the editor where you can download the necessary resources, check colors, fonts, and more.
 - [ ] Download the starter/resources, and if you are a Pro user, you can also download the Figma file.
 - [ ] Initialize the project as a Git repository.
