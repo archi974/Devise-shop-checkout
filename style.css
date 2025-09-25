@@ -219,3 +219,20 @@ form {
   flex-direction: column;
   gap: 10px;
 }
+
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+
+  .content-history {
+    border-radius: 15px 15px 0 0;
+    width: auto;
+  }
+  
+  .content-contact {
+    border-radius: 0 0 15px 15px;
+    width: auto;
+  }
+}
