@@ -105,24 +105,32 @@
     <div class="content-contact">
       <h2>Contact Information</h2>
       <form action="">
-        <label for="name">First & Last name</label>
-        <input type="text" id="name" name="name" placeholder="Enter first & last name" required>
+        <div class="form-field">
+          <label for="name">First & Last name</label>
+          <input type="text" id="name" name="name" placeholder="Enter first & last name" required>
+        </div>
 
-        <label for="email">Email Address</label>
-        <input type="email" id="email" name="email" placeholder="Enter email address" required>
+        <div class="form-field">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="Enter email address" required>
+        </div>
+        <div class="form-grid">
+          <div>
+            <label for="country">Country</label>
+            <select id="country" name="country" required>
+              <option value="finland">Finland</option>
+              <option value="sweden">Sweden</option>
+              <option value="norway">Norway</option>
+              <option value="denmark">Denmark</option>
+              <option value="iceland">Iceland</option>
+            </select>
+          </div>
 
-        <label for="country">Country</label>
-        <select id="country" name="country" required>
-          <option value="" disabled selected>Select your country</option>
-          <option value="finland">Finland</option>
-          <option value="sweden">Sweden</option>
-          <option value="norway">Norway</option>
-          <option value="denmark">Denmark</option>
-          <option value="iceland">Iceland</option>
-        </select>
-
-        <label for="postalcode">Postal Code</label>
-        <input type="text" id="postalcode" name="postalcode" placeholder="00270" required>
+          <div>
+            <label for="postalcode">Postal Code</label>
+            <input type="text" id="postalcode" name="postalcode" placeholder="00270" required>
+          </div>
+        </div>
 
         <button type="submit">Continue</button>
       </form>

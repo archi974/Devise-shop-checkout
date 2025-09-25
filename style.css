@@ -21,6 +21,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 50px;
 }
 
 h1 {
@@ -45,6 +46,8 @@ main {
   border-radius: 15px;
   margin: 20px;
   display: flex;
+  width: 100%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
 }
 
 /* HISTORY */
@@ -56,6 +59,7 @@ main {
   flex-direction: column;
   gap: 30px;
   border-radius: 15px 0 0 15px;
+  width: 100%;
 }
 
 .article-history {
@@ -118,16 +122,86 @@ main {
 
   & button {
     background-color: #000;
-    color: #FFF;
+    color: var(--main-bg);
     border-radius: 5px;
     padding: 15px;
   }
 }
 
-.article-summary_total{
+.article-summary_total {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
 
 /* CONTACT */
+
+.content-contact {
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 100%;
+
+  & h2 {
+    font-size: 1rem;
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  & input {
+    border: solid 1px var(--second-bg);
+    background-color: var(--third-bg);
+    color: #000;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+  }
+
+  & button {
+    background-color: var(--background-button);
+    color: var(--main-bg);
+    width: 100%;
+    border-radius: 10px;
+    padding: 20px;
+  }
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-grid {
+  display: flex;
+  gap: 20px;
+
+  & select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    background-color: var(--third-bg);
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24'><path fill='black' d='M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6l-6-6z'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    border: 1px solid var(--second-bg);
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+  }
+
+}
+
+.form-grid>* {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
