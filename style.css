@@ -66,7 +66,6 @@ main {
   display: flex;
   gap: 20px;
   justify-content: space-between;
-  width: 500px;
 
   & img {
     background-color: #FFF;
@@ -136,6 +135,12 @@ hr {
   display: flex;
   flex-direction: column;
   gap: 5px;
+}
+
+.article-summary_total-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /* CONTACT */
