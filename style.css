@@ -10,7 +10,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Inter",sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 body {
@@ -67,12 +67,22 @@ main {
   gap: 20px;
   justify-content: space-between;
 
-  & img {
+  /*& img {
     background-color: #FFF;
     border-radius: 10px;
-    padding: 10px 30px;
+    padding: 10px calc(0.3 * 100%);
     object-fit: cover;
-  }
+    width: 100px;
+  } */
+}
+
+.img-wrapper {
+  display: flex;
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px 0;
+  width: 125px;
+  justify-content: center;
 }
 
 .article-history_info {
@@ -231,7 +241,7 @@ form {
     border-radius: 15px 15px 0 0;
     width: auto;
   }
-  
+
   .content-contact {
     border-radius: 0 0 15px 15px;
     width: auto;
