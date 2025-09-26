@@ -15,6 +15,7 @@
 
 body {
   background-image: url("./resources/background-image.png");
+  background-color: var(--third-bg);
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: top;
@@ -65,7 +66,7 @@ main {
 /* HISTORY */
 
 .content-history {
-  background-color: var(--second-bg);
+  background-color: var(--third-bg);
   padding: 30px;
   display: flex;
   flex-direction: column;
