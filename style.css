@@ -32,6 +32,7 @@ h1 {
   align-items: center;
   gap: 20px;
   font-weight: 700;
+  font-size: 1.5rem;
 
   & span {
     background-color: var(--background-button);
@@ -57,7 +58,7 @@ button {
 main {
   background-color: var(--main-bg);
   border-radius: 15px;
-  margin: 20px;
+  margin-top: 40px;
   display: flex;
   width: 100%;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
