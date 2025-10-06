@@ -23,7 +23,6 @@ const cartItems = [
 ];
 
 const container = document.getElementById("cart-items");
-const summarySection = container.querySelector("hr");
 
 cartItems.forEach(item => {
     const article = document.createElement("article");
@@ -41,7 +40,7 @@ cartItems.forEach(item => {
             <data value="${item.price}">$${item.price.toFixed(2)}</data>
         </div>
         <div class="article-history_info-quantity">
-            <p>Quantity: ${item.quantity}</p>
+            <p>x${item.quantity}</p>
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" role="img"
                 aria-label="Remove item">
                 <path fill="currentColor"
@@ -49,5 +48,5 @@ cartItems.forEach(item => {
             </svg>
         </div>
     </div>`
-    container.insertBefore(article, summarySection);
+    container.appendChild(article);
 });
