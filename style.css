@@ -43,7 +43,8 @@ h1 {
   }
 }
 
-h2, h3 {
+h2,
+h3 {
   font-size: 1rem;
 }
 
@@ -53,6 +54,16 @@ button {
   border-radius: 5px;
   padding: 15px;
   cursor: pointer;
+
+  &:hover {
+    background-color: var(--second-background-button);
+    transition: background-color 0.3s ease;
+  }
+
+  &:active {
+    transform: scale(0.95);
+    transition: transform 0.2s ease;
+  }
 }
 
 main {
@@ -68,10 +79,10 @@ main {
 
 .content-history {
   background-color: var(--third-bg);
-  padding: 30px;
+  padding: 15px;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 15px;
   border-radius: 15px 0 0 15px;
   width: 100%;
 }
@@ -80,6 +91,13 @@ main {
   display: flex;
   gap: 20px;
   justify-content: space-between;
+  padding: 15px;
+  border-radius: 15px;
+  transition: background-color .3s ease;
+
+  &:hover {
+    background-color: var(--main-bg);
+  }
 
 }
 
@@ -109,6 +127,20 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  & svg {
+    cursor: pointer;
+    transform: rotate(90deg);
+    transition: transform 0.6s ease;
+
+    &:hover {
+      background-color: tomato;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      transform: rotate(0deg);
+      border-radius: 5px;
+      color: #fff;
+    }
+  }
 }
 
 hr {
